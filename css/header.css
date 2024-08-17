@@ -2,7 +2,7 @@
   display: flex;
   height: 85px;
   align-items: top;
-  justify-content: center;
+  justify-content: space-between;
   position: fixed;
   background: transparent;
   top: 0px;
@@ -15,35 +15,25 @@
 .header.scrolled {
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9),
     85%,
     transparent
   ); /* Change to your desired color */
 }
 
-.header-left,
-.header-right,
-.header-center {
-  display: flex;
-  width: 100px;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-left,
-.header-right {
-  justify-content: space-between;
-  gap: 5px;
-}
-
 .header-left {
+  margin-left: 20px;
   margin-right: 30px;
-  width: 450px;
+  width: 50px;
 }
 
 .header-right {
-  margin-left: 30px;
-  width: 450px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 20px;
+  gap: 5px;
 }
 
 .hidden-header-button:hover {
@@ -56,7 +46,9 @@
   color: white;
 }
 .hidden-header-button {
+  width: 10vw;
   display: flex;
+  opacity: 0;
   flex: 1;
   align-items: center;
   justify-content: center;
@@ -66,13 +58,19 @@
   font-family: "Edu VIC WA NT Beginner";
   font-size: large;
   font-weight: bolder;
-  transition: color 0.3s ease;
+  transition: opacity 0.3s ease;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px 0 black;
+  padding-left: calc(0.12 * 10vw);
+  padding-right: calc(0.12 * 10vw);
 }
 
 .header:hover .hidden-header-button {
-  display: flex;
+  opacity: 1;
+  cursor: pointer;
 }
 .tac-button {
+  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,6 +82,7 @@
 
 .tac-button:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 .tac-button:active {
   opacity: 1;
