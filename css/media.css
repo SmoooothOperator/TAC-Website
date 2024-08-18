@@ -1,0 +1,94 @@
+.social-media-page {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../Main-Page-Pic/tac-meet-pic.jpg");
+  filter: brightness(70%);
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.find-us-text {
+  margin-top: 2vh;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 0;
+  display: flex;
+  color: white;
+  font-size: calc(5vh + 3svw);
+  font-weight: bold;
+  text-align: center;
+  padding: calc(2vh + 1svw);
+  border-style: solid;
+  border-width: 10px;
+  border-style: solid;
+}
+
+@media (max-height: 200px) {
+  .social-media-page {
+    gap: 1px;
+  }
+}
+
+.social-media-buttons {
+  margin-top: 1.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5vh;
+  flex-direction: row;
+}
+
+@media (max-aspect-ratio: 2/3) {
+  .social-media-buttons {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+}
+
+.media-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(3 * (5vh + 3vw));
+  width: calc(3 * (5vh + 3vw));
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.ins-icon {
+  height: calc(3 * (5vh + 3vw));
+  object-fit: contain;
+  filter: invert(100%);
+}
+
+.discord-icon {
+  height: calc(3 * (5vh + 3svw));
+  filter: invert(100%);
+}
+
+.fb-icon {
+  height: calc(3 * (0.8 * (5vh + 3vw)));
+  filter: invert(100%);
+}
+
+.ins-icon:hover,
+.discord-icon:hover,
+.fb-icon:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.ins-icon:active,
+.discord-icon:active,
+.fb-icon:active {
+  opacity: 1;
+}

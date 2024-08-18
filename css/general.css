@@ -6,3 +6,18 @@ body {
 div {
   font-family: "Edu VIC WA NT Beginner";
 }
+
+.divider {
+  display: flex;
+  height: 50px;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.divider-element-1 {
+  flex: 1;
+  height: 50px;
+  background-color: rgb(16, 16, 16);
+  opacity: 0.9;
+}

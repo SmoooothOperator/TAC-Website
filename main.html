@@ -32,11 +32,22 @@
       rel="stylesheet"
       href="css/general.css"
     />
+    <link
+      rel="stylesheet"
+      href="css/about.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/media.css"
+    />
   </head>
   <body>
     <div class="header">
       <div class="header-left">
-        <button class="tac-button">
+        <button
+          class="tac-button"
+          onclick="document.getElementById('target-cover').scrollIntoView({ behavior: 'smooth' });"
+        >
           <img
             class="tac-logo"
             src="Icons/Solid_logo.png"
@@ -45,15 +56,29 @@
         </button>
       </div>
       <div class="header-right">
-        <button class="hidden-header-button">About Us</button>
+        <button
+          class="hidden-header-button"
+          onclick="document.getElementById('target-about').scrollIntoView({ behavior: 'smooth' });"
+        >
+          About Us
+        </button>
+        <button
+          class="hidden-header-button"
+          onclick="document.getElementById('social-media-target').scrollIntoView({ behavior: 'smooth' });"
+        >
+          Social Media
+        </button>
+
         <button class="hidden-header-button">Our Events</button>
-        <button class="hidden-header-button">Social Media</button>
         <button class="hidden-header-button">Gallary</button>
         <button class="hidden-header-button">FAQ</button>
       </div>
     </div>
 
-    <div class="cover-page">
+    <div
+      class="cover-page"
+      id="target-cover"
+    >
       <img
         class="cover-image"
         src="Main-Page-Pic/Main-Page-2.jpg"
@@ -66,7 +91,76 @@
         </div>
       </div>
     </div>
+    <div class="divider">
+      <div class="divider-element-1"></div>
+    </div>
+    <div
+      class="about-us-page"
+      id="target-about"
+    >
+      <div class="about-image-container">
+        <img
+          class="about-image"
+          src="Main-Page-Pic/about-us-pic.jpg"
+          alt="about-us-image"
+        />
+      </div>
+      <div class="about-right-container">
+        <div class="about-us-title">About Us.</div>
+        <div class="about-us-text">
+          Founded in 2006, and originally known as Imports@UCSD, University of
+          California San Diego’s automotive club, now known as Triton Auto Club
+          at UC San Diego, is a non profit organization that aims to build a
+          healthy community for car enthusiasts to gather and share their
+          collective knowledge about automobiles as well as motorsports. Members
+          of the club enjoys a great community to connect and socialize with, as
+          well as our organized events such as on-campus car meets, cruises,
+          high-performance driving events (Track day & Autocross), and an annual
+          library walk car showcase.
+        </div>
+      </div>
+    </div>
+    <div class="divider">
+      <div class="divider-element-1"></div>
+    </div>
+    <div
+      class="social-media-page"
+      id="social-media-target"
+    >
+      <div class="find-us-text">Find us on social media!</div>
+      <div class="social-media-buttons">
+        <a
+          href="https://discord.gg/MvFtdg2rtY"
+          target="_blank"
+          class="media-button"
+        >
+          <img
+            class="discord-icon"
+            src="Icons/discord.png"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/tritonautoclub/"
+          target="_blank"
+          class="media-button"
+        >
+          <img
+            class="ins-icon"
+            src="Icons/ins.png"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/groups/tritonautoclub/"
+          target="_blank"
+          class="media-button"
+        >
+          <img
+            class="fb-icon"
+            src="Icons/fb.png"
+          />
+        </a>
+      </div>
+    </div>
     <script src="scroll.js"></script>
-    <div class="about-us-page"></div>
   </body>
 </html>

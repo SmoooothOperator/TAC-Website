@@ -1,5 +1,3 @@
-// script.js
-
 // Set the scroll threshold
 const scrollThreshold = 100; // Adjust this value as needed
 
