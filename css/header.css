@@ -22,9 +22,32 @@
 }
 
 .header-left {
+  display: flex;
   margin-left: 20px;
   margin-right: 30px;
   width: 50px;
+}
+
+.nav-button {
+  margin-left: 5px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: "Edu VIC WA NT Beginner";
+  font-size: large;
+  font-weight: bolder;
+  transition: opacity 0.3s ease;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px 0 black;
+  padding-left: calc(0.12 * 10vw);
+  padding-right: calc(0.12 * 10vw);
+}
+
+.nav-button:hover {
+  cursor: pointer;
+  color: black;
+  text-shadow: 1px 1px 0 hsl(46, 100%, 50%), -1px -1px 0 hsl(46, 100%, 50%),
+    1px -1px 0 hsl(46, 100%, 50%), -1px 1px 0 hsl(46, 100%, 50%);
 }
 
 .header-right {
