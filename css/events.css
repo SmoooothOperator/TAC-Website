@@ -1,0 +1,145 @@
+.events-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-0,
+.row-1,
+.row-2,
+.row-3,
+.row-4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.row-0 {
+  padding-top: 85px;
+  padding-bottom: 5px;
+  background-color: rgb(38, 38, 38);
+  border-bottom-style: solid;
+  border-bottom-width: 15px;
+  border-bottom-color: rgb(255, 174, 0);
+}
+
+.row-1 {
+  height: 30vh;
+}
+
+.r1-c1 {
+  height: inherit;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  font-size: calc(10vh + 8vw);
+  font-weight: bold;
+  background-color: whitesmoke;
+}
+
+.row-2,
+.row-3 {
+  height: calc(30vh + 20vw);
+  width: 100vw;
+}
+
+.r2-c1 {
+  height: inherit;
+  flex: 2;
+  background-color: rgb(255, 174, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.r2-c2 {
+  height: inherit;
+  flex: 7;
+  display: flex;
+  overflow: hidden;
+}
+
+.r2-img {
+  height: auto;
+  object-fit: cover;
+  flex: 1;
+}
+
+.title-row2 {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 2.5vw;
+  font-size: calc(4vh + 3vw);
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: cent;
+}
+
+.text-row2 {
+  margin-bottom: 2vh;
+  margin-left: 2vw;
+  margin-right: 2.5vw;
+  padding: calc(0.3vh + 0.2vw);
+  text-align: center;
+  font-size: calc(1.5vh + 1vw);
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.r3-c1 {
+  height: inherit;
+  flex: 2;
+}
+
+.r3-c2 {
+  height: inherit;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(38, 38, 38);
+}
+
+.title-row3 {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(3vh + 2.5vw);
+  font-weight: bold;
+  color: rgb(255, 174, 0);
+  margin: 2vw;
+  text-align: center;
+}
+
+.text-row3 {
+  margin: 2vw;
+  color: whitesmoke;
+  font-size: calc(1.5vh + 1vw);
+  text-align: center;
+}
+
+.r3-c3 {
+  height: inherit;
+  flex: 3;
+}
+
+.r3-img,
+.r3-img-2 {
+  height: inherit;
+  max-width: 100%;
+  flex: 1.2;
+  align-items: left;
+  object-fit: cover;
+  object-position: 40%;
+}
+
+.r3-img-2 {
+  object-position: 25%;
+}

@@ -88,6 +88,23 @@
   padding-right: calc(0.12 * 10vw);
 }
 
+.header-button-link {
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header-button-link-event {
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 3px;
+}
+
 .header:hover .hidden-header-button {
   opacity: 1;
   cursor: pointer;

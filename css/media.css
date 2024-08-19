@@ -6,12 +6,13 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: url("../Main-Page-Pic/tac-meet-pic.jpg");
+  background-image: url("../Main-Page-Pic/Social-Page.jpg");
   filter: brightness(70%);
   object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: scroll;
 }
 
 .find-us-text {
