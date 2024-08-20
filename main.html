@@ -59,6 +59,13 @@
       <div class="header-right">
         <button
           class="hidden-header-button"
+          onclick="document.getElementById('target-cover').scrollIntoView({ behavior: 'smooth' });"
+        >
+          Home
+        </button>
+
+        <button
+          class="hidden-header-button"
           onclick="document.getElementById('target-about').scrollIntoView({ behavior: 'smooth' });"
         >
           About Us
@@ -77,8 +84,8 @@
             >Our Events</a
           >
         </button>
-        <button class="hidden-header-button">Gallary</button>
-        <button class="hidden-header-button">FAQ</button>
+        <!-- <button class="hidden-header-button">Gallary</button> -->
+        <!-- <button class="hidden-header-button">FAQ</button> -->
       </div>
     </div>
     <script src="scroll.js"></script>
