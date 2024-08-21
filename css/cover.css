@@ -45,6 +45,8 @@
   transform: translate(-100%);
   transition: opacity 1s ease, transform 1.5s ease;
 }
+
+.tac-text:focus,
 .tac-text:hover {
   cursor: pointer;
 }

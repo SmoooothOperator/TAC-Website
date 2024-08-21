@@ -34,7 +34,7 @@
   border: none;
   color: white;
   font-family: "Edu VIC WA NT Beginner";
-  font-size: large;
+  font-size: calc(1vw + 1vh);
   font-weight: bolder;
   transition: opacity 0.3s ease;
   text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black,
@@ -55,8 +55,9 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-left: 20px;
+  margin-left: 0px;
   gap: 5px;
+  margin-right: 5px;
 }
 
 .hidden-header-button:hover {
@@ -79,7 +80,7 @@
   border: none;
   color: white;
   font-family: "Edu VIC WA NT Beginner";
-  font-size: large;
+  font-size: calc(1vw + 1vh);
   font-weight: bolder;
   transition: opacity 0.3s ease;
   text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black,
